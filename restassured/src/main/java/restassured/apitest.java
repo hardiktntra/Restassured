@@ -35,6 +35,6 @@ public class apitest {
         
         // Print response
         System.out.println("\n Status Code: " + response.getStatusCode());
-        System.out.println("---> Response JSON Body is here: " + response.getBody().asString());
+        System.out.println("---> Response JSON Body: " + response.getBody().asString());
     }
 }
