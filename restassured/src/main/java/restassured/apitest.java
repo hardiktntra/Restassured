@@ -18,11 +18,13 @@ public class apitest {
         requestParams.put("name", "morpheus");
         requestParams.put("job", "leader");
         
+        
         // Convert JSONObject to String
         request.body(requestParams.toString());
         
         // Set headers
         request.header("Content-Type", "application/json");
+        request.header("x-api-key", "reqres-free-v1");
         
         // Send POST request
         Response response = request.post(strURITokenForPost);
