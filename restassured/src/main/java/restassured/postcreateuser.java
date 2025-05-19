@@ -5,7 +5,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class apitest {
+public class postcreateuser {
     
     public static void main(String[] args) {
         RestAssured.baseURI = "https://reqres.in/";
