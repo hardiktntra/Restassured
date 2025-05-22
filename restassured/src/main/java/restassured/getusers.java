@@ -6,8 +6,8 @@ import io.restassured.response.Response;
 public class getusers {
 
     public static void main(String[] args) {
-        String baseurl = "https://reqres.in/";
-        String strURITokenForget = "api/users?page=2"; // Make sure to include /api/
+        String baseurl = "https://reqres.in";
+        String strURITokenForget = "/api/users?page=2"; // Make sure to include /api/
         String fullUrl = baseurl + strURITokenForget;
 
         // Send GET request and store the response
@@ -26,5 +26,7 @@ public class getusers {
         // Print results
         System.out.println("Status Code: " + statusCode);
         System.out.println("Response Body:\n" + responseBody);
+        
+        
     }
 }
